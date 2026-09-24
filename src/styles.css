@@ -56,7 +56,7 @@ h1 {
 .stats {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  grid-template-columns: repeat(4, minmax(110px, 1fr));
 }
 
 .stat,
@@ -264,6 +264,169 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.side {
+  align-content: start;
+  display: grid;
+  gap: 18px;
+}
+
+.primary.small {
+  min-height: 36px;
+  padding: 8px 12px;
+}
+
+.liability {
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 4px 9px;
+}
+
+.liability.pending {
+  background: #eceae2;
+  color: #6d675a;
+}
+
+.liability.landlord {
+  background: #dde8f2;
+  color: #315674;
+}
+
+.liability.tenant {
+  background: #f2d8cf;
+  color: #8a3b2d;
+}
+
+.liability.shared {
+  background: #f4deb4;
+  color: #694c21;
+}
+
+.hint {
+  color: #828a80;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.judge-form {
+  background: #f6f7f2;
+  border: 1px dashed #c4ccbd;
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+}
+
+.judge-row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 120px;
+}
+
+.judge-result {
+  display: grid;
+  gap: 6px;
+}
+
+.finish-note {
+  color: #60695f;
+  font-size: 0.86rem;
+  margin: 0;
+}
+
+.finish-photo {
+  color: #526d4e;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.deposit {
+  display: grid;
+  gap: 12px;
+}
+
+.deposit-rows {
+  display: grid;
+  gap: 8px;
+}
+
+.deposit-rows div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deposit-rows span {
+  color: #687166;
+  font-size: 0.86rem;
+}
+
+.ledger-panel {
+  margin-top: 18px;
+}
+
+.ledger {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ledger li {
+  align-items: center;
+  border-bottom: 1px solid #eef1eb;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.ledger-type {
+  background: #eef1eb;
+  border-radius: 999px;
+  color: #596257;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 3px 8px;
+}
+
+.ledger-type.reserve,
+.ledger-type.deduct {
+  background: #f2d8cf;
+  color: #8a3b2d;
+}
+
+.ledger-type.release,
+.ledger-type.refund {
+  background: #d8ead6;
+  color: #376336;
+}
+
+.ledger-type.landlord-expense {
+  background: #dde8f2;
+  color: #315674;
+}
+
+.ledger-type.expense-reversal {
+  background: #eceae2;
+  color: #6d675a;
+}
+
+.ledger-title {
+  font-weight: 800;
+}
+
+.ledger-detail {
+  color: #828a80;
+  flex: 1;
+  font-size: 0.82rem;
+}
+
+.ledger time {
+  color: #9aa398;
+  font-size: 0.78rem;
 }
 
 .empty {
